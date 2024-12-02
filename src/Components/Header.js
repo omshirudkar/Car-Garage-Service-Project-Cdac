@@ -5,9 +5,7 @@ export default function Header() {
   return (
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
-        <Link class="navbar-brand" to="#">
-          Navbar
-        </Link>
+   
         <button
           class="navbar-toggler"
           type="button"

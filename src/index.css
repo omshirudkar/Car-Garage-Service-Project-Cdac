@@ -8,7 +8,7 @@ body {
   /* width: 200px; */
   /* border: 1px solid; */
   margin: 10px;
-  box-shadow: 0 0 10px;
+  box-shadow: 0 0 3px;
   transition: transform 0.3s ease, background-color 0.3s ease;
 }
 .homeContainer:hover {
@@ -23,6 +23,7 @@ body {
 
 .homeContainer img {
   transition: transform 0.3s ease;
+
 }
 
 .homeContainer:hover img {
@@ -41,3 +42,7 @@ body {
   box-shadow: 0 0 5px ;
   border-radius: 40px;
 }
+.Head{
+  color:rgba(85, 50, 21, 0.815);
+}
+

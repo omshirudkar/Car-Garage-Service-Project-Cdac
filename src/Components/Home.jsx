@@ -1,53 +1,112 @@
 import React from "react";
 import img from "../assests/periodicservices1.jpg";
+import bat1 from "../assests/acservicerepair5.jpg";
+import bat2 from "../assests/android-app-store.png";
+import bat3 from "../assests/batteries3.jpg";
+import bat4 from "../assests/customer-service.png";
+import bat5 from "../assests/dentingpainting2.jpg";
+import bat6 from "../assests/expert-mechanic.png";
+import bat7 from "../assests/garage  image1.jpg";
+import bat8 from "../assests/garage.png";
+import acci from "../assests/accidentservice.jpg";
+import tyre from "../assests/tyreswheels6.jpg";
+import detail from "../assests/detailingservices8.jpg";
+import custom from "../assests/customservices9.png";
+import wind from "../assests/windsheild.jpg";
+import light from "../assests/light.jpg";
+import enigine from "../assests/Engine_Decarbonization.png";
+import wash from "../assests/carwash-removebg-preview(3).png";
+
 export default function Home() {
   return (
     <>
       <div className="container text-center mt-5">
-        <h1>Car Repair & Services</h1>
+        <h1 className="Head">
+          <b>Car Repair & Services</b>
+        </h1>
       </div>
 
-      <div class="container home text-center p-5 mt-3">
+      <div class="container-fluid home text-center p-5 mt-3 me-3  ">
         <div class="row d-flex justify-content-center">
-          <div class="col-xl-2 img-fluid homeContainer p-5">
-            <img src={img} alt="" />
-            <b>Battery</b>
+          <div class="col-xl-2 img-fluid homeContainer p-2">
+            <img src={bat3} alt="" />
+            <b style={{ fontSize: "15px" }}>
+              <h6>
+                <b>Batteries</b>
+              </h6>
+            </b>
           </div>
-          <div class="col-xl-2 img-fluid homeContainer p-5">
-            <img src={img} alt="" />
-            <b>Battery</b>
+          <div class="col-xl-2 img-fluid homeContainer p-2">
+            <img src={bat5} alt="" />
+            <b style={{ fontSize: "15px" }}>
+              <h6>
+                <b>Denting And Painting</b>
+              </h6>
+            </b>
           </div>
-          <div class="col-xl-2 img-fluid homeContainer p-5">
+          <div class="col-xl-2 img-fluid homeContainer p-2">
             <img src={img} alt="" />
-            <b>Battery</b>
+            <b style={{ fontSize: "15px" }}>
+              <h6>
+                <b>Periodic Services</b>
+              </h6>
+            </b>
           </div>
-          <div class="col-xl-2 img-fluid homeContainer p-5">
-            <img src={img} alt="" />
-            <b>Battery</b>
+          <div class="col-xl-2 img-fluid homeContainer p-2">
+            <img src={acci} alt="" />
+            <b style={{ fontSize: "15px" }}>
+              <h6>
+                <b>Accidental Car Repair </b>
+              </h6>
+            </b>
           </div>
-          <div class="col-xl-2 img-fluid homeContainer p-5">
-            <img src={img} alt="" />
-            <b>Battery</b>
+          <div class="col-xl-2 img-fluid homeContainer p-2">
+            <img src={tyre} alt="" />
+            <b style={{ fontSize: "15px" }}>
+              <h6>
+                <b>Tyres And Wheels </b>
+              </h6>
+            </b>
           </div>
-          <div class="col-xl-2 img-fluid homeContainer p-5">
-            <img src={img} alt="" />
-            <b>Battery</b>
+          <div class="col-xl-2 img-fluid homeContainer p-2">
+            <img src={custom} alt="" />
+            <b style={{ fontSize: "15px" }}>
+              <h6>
+                <b>Custom Services </b>
+              </h6>
+            </b>
           </div>
-          <div class="col-xl-2 img-fluid homeContainer p-5">
-            <img src={img} alt="" />
-            <b>Battery</b>
+          <div class="col-xl-2 img-fluid homeContainer p-2">
+            <img src={wind} alt="" />
+            <b style={{ fontSize: "15px" }}>
+              <h6>
+                <b>Windshield And Glass </b>
+              </h6>
+            </b>
           </div>
-          <div class="col-xl-2 img-fluid homeContainer p-5">
-            <img src={img} alt="" />
-            <b>Battery</b>
+          <div class="col-xl-2 img-fluid homeContainer p-2">
+            <img src={light} alt="" />
+            <b style={{ fontSize: "15px" }}>
+              <h6>
+                <b>Lights And Fitments </b>
+              </h6>
+            </b>
           </div>
-          <div class="col-xl-2 img-fluid homeContainer p-5">
-            <img src={img} alt="" />
-            <b>Battery</b>
+          <div class="col-xl-2 img-fluid homeContainer p-2">
+            <img src={enigine} alt="" />
+            <b style={{ fontSize: "15px" }}>
+              <h6>
+                <b>Engine Decarbonization </b>
+              </h6>
+            </b>
           </div>
-          <div class="col-xl-2 img-fluid homeContainer p-5">
-            <img src={img} alt="" />
-            <b>Battery</b>
+          <div class="col-xl-2 img-fluid homeContainer p-2">
+            <img src={wash} alt="" />
+            <b style={{ fontSize: "15px" }}>
+              <h6>
+                <b>Car Wash</b>
+              </h6>
+            </b>
           </div>
         </div>
       </div>
@@ -75,7 +134,7 @@ export default function Home() {
               <div className="row">
                 <div className="col-xl-4 m-3">
                   <img
-                    src="https://www.garage.movemycar.in/assets/images/expert-mechanic.png"
+                    src="Car2\car2\src\assests\garage.png"
                     alt=""
                   />
                   <b className="h-text">Expert Engineers</b>
@@ -260,7 +319,10 @@ export default function Home() {
 
       <div className="container mt-5">
         <h3>Frequently Asked Questions</h3>
-        <div className="accordion accordion-flush mt-5" id="accordionFlushExample">
+        <div
+          className="accordion accordion-flush mt-5"
+          id="accordionFlushExample"
+        >
           {/* Accordion Item 1 */}
           <div className="accordion-item">
             <h2 className="accordion-header">

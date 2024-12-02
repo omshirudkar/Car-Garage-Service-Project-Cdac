@@ -6,6 +6,10 @@ import Login from "./Components/Login";
 import Home from "./Components/Home";
 import Contact from "./Components/Contact";
 import Register from "./Components/Register";
+import Admin from "./Components/Admin";
+import Header from "./Components/admin/Header";
+import AdminDash from "./Components/admin/AdminDash";
+import StaffList from "./Components/admin/Staffmanagment";
 
 const projectRouter = createBrowserRouter([
   {
@@ -32,7 +36,16 @@ const projectRouter = createBrowserRouter([
         path: "/register",
         element: <Register />,
       },
+      {
+        path: "/dashboard", // Relative path under /admin
+        element: <AdminDash />,
+      },
+      {
+        path: "/staff", // Relative path under /admin
+        element: <StaffList />,
+      },
     ],
   },
 ]);
+
 export default projectRouter;

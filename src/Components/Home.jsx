@@ -22,7 +22,7 @@ export default function Home() {
     <>
       <div className="container text-center mt-5">
         <h1 className="Head">
-          <b>Car Repair & Services</b>
+          <b>Fake Car Repair & Services</b>
         </h1>
       </div>
 

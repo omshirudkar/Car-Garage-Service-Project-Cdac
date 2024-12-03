@@ -2,7 +2,7 @@
 import React from "react";
 export default function Contact() {
   return (
-    <div className="container ">
+    <div className="container mt-5 ">
       <style>
         {`
       .container {
@@ -15,7 +15,7 @@ export default function Contact() {
                 }
                     `}
       </style>
-      <div className="col-mt-6 contact-info">
+      <div className="col-mt-6 contact-info ">
         <h2>We’re Here to Help You with All Your Garage Needs!</h2>
         <p>
           Whether you need a repair, service, or simply have a question, our

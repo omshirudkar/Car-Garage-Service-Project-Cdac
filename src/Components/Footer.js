@@ -22,11 +22,7 @@ function Footer() {
                 Contact
               </a>
             </li>
-            <li style={styles.listItem}>
-              <a href="/faq" style={styles.link}>
-                FAQ
-              </a>
-            </li>
+       
           </ul>
         </div>
 
@@ -81,7 +77,7 @@ function Footer() {
 
 const styles = {
   footer: {
-    backgroundColor: "#222",
+    backgroundColor: "#224",
     color: "#fff",
     paddingTop: "50px",
     paddingBottom: "10px",

@@ -8,8 +8,12 @@ import Contact from "./Components/Contact";
 import Register from "./Components/Register";
 import Admin from "./Components/Admin";
 import Header from "./Components/admin/Header";
+
+//Routing of the admin components 
+
 import AdminDash from "./Components/admin/AdminDash";
 import StaffList from "./Components/admin/Staffmanagment";
+import AdminForm from "./Components/AdminForm";
 
 const projectRouter = createBrowserRouter([
   {
@@ -25,6 +29,10 @@ const projectRouter = createBrowserRouter([
         element: <Login />,
       },
       {
+        path: "/admin-login",
+        element: <AdminForm />,
+      },
+      {
         path: "/about",
         element: <About />,
       },
@@ -37,7 +45,7 @@ const projectRouter = createBrowserRouter([
         element: <Register />,
       },
       {
-        path: "/dashboard", // Relative path under /admin
+        path: "/admin-dashboard", // Relative path under /admin
         element: <AdminDash />,
       },
       {

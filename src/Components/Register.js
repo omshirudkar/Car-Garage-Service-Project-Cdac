@@ -19,7 +19,9 @@ export default function Register() {
 
     // Navigate based on the selected role
     if (selectedRole === "admin") {
-      navigate("/admin"); // Navigate to Admin Component
+      navigate("/admin-login"); // Navigate to Admin Component
+    } else if (selectedRole === "") {
+      navigate("/login");
     }
   };
 
@@ -38,6 +40,9 @@ export default function Register() {
     console.log("Password:", password);
     console.log("Confirm Password:", confirmPassword);
     console.log("Role:", role);
+
+    // Navigate after successful registration
+    navigate("/login"); // Redirect to login page after successful registration
   };
 
   return (
@@ -120,7 +125,6 @@ export default function Register() {
                   name="role"
                   value={role}
                   onChange={handleRoleChange} // Listen to role change
-                  required
                 >
                   <option value="">Select Role</option>
                   <option value="admin">Admin</option>

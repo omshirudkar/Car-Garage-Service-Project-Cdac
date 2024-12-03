@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 
 function ContactUs() {
@@ -51,8 +50,9 @@ function ContactUs() {
   };
 
   return (
-    <div className="container ">
-      <div className="contact-us-container ">
+    <div className="container  ">
+      
+      <div className="contact-us-container">
         <style>{`
                 .contact-us-container {
                     padding: 60px 0;

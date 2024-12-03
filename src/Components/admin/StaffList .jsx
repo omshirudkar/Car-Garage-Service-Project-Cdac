@@ -1,29 +1,63 @@
-import React, { useState, useEffect } from "react";
-import Header from "../admin/Header";
+import React, { useState } from "react";
 
-const StaffList = () => {
+export default function StaffList() {
+  const [staff, setStaff] = useState([
+    { name: "John Doe", role: "Manager", status: "Active" },
+    { name: "Jane Smith", role: "Mechanic", status: "Active" },
+    { name: "Mark Wilson", role: "Assistant", status: "Inactive" },
+  ]);
+
+  const deleteStaff = (index) => {
+    const updatedStaff = staff.filter((_, i) => i !== index);
+    setStaff(updatedStaff);
+  };
+
   return (
-    <div>
-      <Header />
+    <div style={styles.container}>
       <h2>Staff Management</h2>
-      <input
-        type="text"
-        placeholder="Enter staff name"
-        value={staffName}
-        onChange={(e) => setStaffName(e.target.value)}
-      />
-      <button onClick={handleAddStaff}>Add Staff</button>
-
-      <ul>
-        {staffList.map((staff) => (
-          <li key={staff.id}>
-            {staff.name}
-            <button onClick={() => handleDeleteStaff(staff.id)}>Delete</button>
-          </li>
-        ))}
-      </ul>
+      <button
+        className="btn btn-primary mb-3"
+        onClick={() => alert("Add Staff")}
+      >
+        Add New Staff
+      </button>
+      <table className="table table-bordered" style={styles.table}>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Role</th>
+            <th>Status</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          {staff.map((member, index) => (
+            <tr key={index}>
+              <td>{member.name}</td>
+              <td>{member.role}</td>
+              <td>{member.status}</td>
+              <td>
+                <button
+                  className="btn btn-danger"
+                  onClick={() => deleteStaff(index)}
+                >
+                  Delete
+                </button>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
     </div>
   );
-};
+}
 
-export default StaffList;
+const styles = {
+  container: {
+    padding: "20px",
+  },
+  table: {
+    width: "100%",
+    marginTop: "20px",
+  },
+};

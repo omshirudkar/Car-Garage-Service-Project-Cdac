@@ -1,18 +1,29 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function Login() {
+
+
+
   // State for form data
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
+    const navigate = useNavigate();
+  
+
+
   // Handle form submission
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Here you can add logic to handle the login process, e.g., sending data to an API
-    console.log("Email:", email);
-    console.log("Password:", password);
-  };
+   const handleSubmit = (e) => {
+     e.preventDefault();
+
+     // Here you can add logic to handle the login process, e.g., sending data to an API
+     console.log("Email:", email);
+     console.log("Password:", password);
+
+     // After successful login, navigate to the home page
+     navigate("/"); // Redirect to home page after login
+   };
 
   return (
     <>

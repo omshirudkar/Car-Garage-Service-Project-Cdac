@@ -9,11 +9,12 @@ import Register from "./Components/Register";
 import Admin from "./Components/Admin";
 import Header from "./Components/admin/Header";
 
-//Routing of the admin components 
+//Routing of the admin components
 
 import AdminDash from "./Components/admin/AdminDash";
 import StaffList from "./Components/admin/Staffmanagment";
 import AdminForm from "./Components/AdminForm";
+import AssignTask from "./Components/admin/AssignTask";
 
 const projectRouter = createBrowserRouter([
   {
@@ -51,6 +52,10 @@ const projectRouter = createBrowserRouter([
       {
         path: "/staff", // Relative path under /admin
         element: <StaffList />,
+      },
+      {
+        path: "/assign-task", // Admin routing
+        element: <AssignTask />,
       },
     ],
   },

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Sidebar from "./Sidebar";
 
 export default function StaffList() {
   const [staff, setStaff] = useState([
@@ -14,6 +15,7 @@ export default function StaffList() {
 
   return (
     <div style={styles.container}>
+      <Sidebar />
       <h2>Staff Management</h2>
       <button
         className="btn btn-primary mb-3"

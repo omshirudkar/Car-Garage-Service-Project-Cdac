@@ -15,6 +15,10 @@ import AdminDash from "./Components/admin/AdminDash";
 import StaffList from "./Components/admin/Staffmanagment";
 import AdminForm from "./Components/AdminForm";
 import AssignTask from "./Components/admin/AssignTask";
+import BatteryService from "./Components/BatteryService";
+import DentingAndPainting from "./Components/DentingAndPainting";
+import Periodicservices from "./Components/Periodicservices";
+import Accidental_Car_Repair from "./Accidental_Car_Repair";
 
 const projectRouter = createBrowserRouter([
   {
@@ -22,8 +26,8 @@ const projectRouter = createBrowserRouter([
     element: <App />,
     children: [
       {
-        path: "/",
-        element: <Home />,
+        path: "/", //give url name you want here
+        element: <Home />, //Assign that component to that path
       },
       {
         path: "/login",
@@ -45,6 +49,13 @@ const projectRouter = createBrowserRouter([
         path: "/register",
         element: <Register />,
       },
+
+      {
+        path: "/batteriesservices",
+        element: <BatteryService />,
+      },
+
+      //Adimin Routing
       {
         path: "/admin-dashboard", // Relative path under /admin
         element: <AdminDash />,
@@ -56,6 +67,19 @@ const projectRouter = createBrowserRouter([
       {
         path: "/assign-task", // Admin routing
         element: <AssignTask />,
+      },
+      {
+        path: "/DentingAndPainting", // Admin routing
+        element: <DentingAndPainting />,
+      },
+
+      {
+        path: "/periodicservices", // Admin routing
+        element: <Periodicservices />,
+      },
+      {
+        path: "/Accidentalcarrepair", // Admin routing
+        element: <Accidental_Car_Repair />,
       },
     ],
   },

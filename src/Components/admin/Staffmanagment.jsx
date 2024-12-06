@@ -4,6 +4,7 @@ import Sidebar from "./Sidebar"; // Sidebar component
 
 export default function StaffList() {
   const [staff, setStaff] = useState([
+    { name: "Om Shirudkar", role: "Owner(Boss)", status: "Active" },
     { name: "John Doe", role: "Manager", status: "Active" },
     { name: "Jane Smith", role: "Mechanic", status: "Active" },
     { name: "Mark Wilson", role: "Assistant", status: "Inactive" },
@@ -157,6 +158,7 @@ export default function StaffList() {
         <table className="table table-bordered" style={styles.table}>
           <thead>
             <tr>
+              <th>No</th>
               <th>Name</th>
               <th>Role</th>
               <th>Status</th>
@@ -166,6 +168,7 @@ export default function StaffList() {
           <tbody>
             {staff.map((member, index) => (
               <tr key={index}>
+                <td>{index + 1}</td>
                 <td>{member.name}</td>
                 <td>{member.role}</td>
                 <td>{member.status}</td>

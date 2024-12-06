@@ -25,6 +25,41 @@ export default function Home() {
     navigator("/login");
   }
 
+  function f2() {
+    navigator("/batteriesservices");
+  }
+
+  function f3() {
+    navigator("/DentingAndPainting");
+  }
+
+  function f4() {
+    navigator("/periodicservices");
+  }
+
+  function f5() {
+    navigator("/accidentalCarRepair");
+  }
+
+  function f6() {
+    navigator("/batteriesservices");
+  }
+  function f7() {
+    navigator("/batteriesservices");
+  }
+
+  function f8() {
+    navigator("/batteriesservices");
+  }
+
+  function f9() {
+    navigator("/batteriesservices");
+  }
+
+  function f10() {
+    navigator("/batteriesservices");
+  }
+
   return (
     <>
       <div className="container text-center mt-5">
@@ -36,27 +71,86 @@ export default function Home() {
       {/* Services Section */}
       <div className="container-fluid home text-center p-5 mt-3 me-3">
         <div className="row d-flex justify-content-center">
-          {[
-            { imgSrc: bat3, title: "Batteries" },
-            { imgSrc: bat5, title: "Denting And Painting" },
-            { imgSrc: img, title: "Periodic Services" },
-            { imgSrc: acci, title: "Accidental Car Repair" },
-            { imgSrc: tyre, title: "Tyres And Wheels" },
-            { imgSrc: custom, title: "Custom Services" },
-            { imgSrc: wind, title: "Windshield And Glass" },
-            { imgSrc: light, title: "Lights And Fitments" },
-            { imgSrc: enigine, title: "Engine Decarbonization" },
-            { imgSrc: wash, title: "Car Wash" },
-          ].map((service, index) => (
-            <div key={index} className="col-xl-2 img-fluid homeContainer p-2">
-              <img src={service.imgSrc} alt="" />
-              <b style={{ fontSize: "15px" }}>
-                <h6>
-                  <b>{service.title}</b>
-                </h6>
-              </b>
-            </div>
-          ))}
+          <div className="col-xl-2 img-fluid homeContainer p-2" onClick={f2}>
+            <img src={bat3} alt="" />
+            <b style={{ fontSize: "15px" }}>
+              <h6>
+                <b>Batteries</b>
+              </h6>
+            </b>
+          </div>
+          <div className="col-xl-2 img-fluid homeContainer p-2" onClick={f3}>
+            <img src={bat5} alt="" />
+            <b style={{ fontSize: "15px" }}>
+              <h6>
+                <b>Denting And Painting</b>
+              </h6>
+            </b>
+          </div>
+          <div className="col-xl-2 img-fluid homeContainer p-2" onClick={f4}>
+            <img src={img} alt="" />
+            <b style={{ fontSize: "15px" }}>
+              <h6>
+                <b>Periodic Services</b>
+              </h6>
+            </b>
+          </div>
+          <div className="col-xl-2 img-fluid homeContainer p-2" onClick={f5}>
+            <img src={acci} alt="" />
+            <b style={{ fontSize: "15px" }}>
+              <h6>
+                <b>Accidental Car Repair</b>
+              </h6>
+            </b>
+          </div>
+          <div className="col-xl-2 img-fluid homeContainer p-2">
+            <img src={tyre} alt="" />
+            <b style={{ fontSize: "15px" }}>
+              <h6>
+                <b>Tyres And Wheels</b>
+              </h6>
+            </b>
+          </div>
+          <div className="col-xl-2 img-fluid homeContainer p-2">
+            <img src={custom} alt="" />
+            <b style={{ fontSize: "15px" }}>
+              <h6>
+                <b>Custom Services</b>
+              </h6>
+            </b>
+          </div>
+          <div className="col-xl-2 img-fluid homeContainer p-2">
+            <img src={wind} alt="" />
+            <b style={{ fontSize: "15px" }}>
+              <h6>
+                <b>Windshield And Glass</b>
+              </h6>
+            </b>
+          </div>
+          <div className="col-xl-2 img-fluid homeContainer p-2">
+            <img src={light} alt="" />
+            <b style={{ fontSize: "15px" }}>
+              <h6>
+                <b>Lights And Fitments</b>
+              </h6>
+            </b>
+          </div>
+          <div className="col-xl-2 img-fluid homeContainer p-2">
+            <img src={enigine} alt="" />
+            <b style={{ fontSize: "15px" }}>
+              <h6>
+                <b>Engine Decarbonization</b>
+              </h6>
+            </b>
+          </div>
+          <div className="col-xl-2 img-fluid homeContainer p-2">
+            <img src={wash} alt="" />
+            <b style={{ fontSize: "15px" }}>
+              <h6>
+                <b>Car Wash</b>
+              </h6>
+            </b>
+          </div>
         </div>
       </div>
 
